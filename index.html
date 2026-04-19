@@ -1,287 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya Ghar Solar Subsidy | 2026 ROI & Subsidy Calculator</title>
-    <meta name="description" content="Official 2026 guide for Surya Ghar Solar Subsidy. Calculate your 3kW subsidy (₹78,000), project costs, and payback period using MNRE April 2026 guidelines.">
-    
-    <!-- Generative Engine Optimization (GEO) & Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Surya Ghar Solar Subsidy Calculator",
-      "operatingSystem": "All",
-      "applicationCategory": "FinanceApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR"
-      },
-      "abstract": "A high-performance tool to calculate PM Surya Ghar subsidies based on 2026 MNRE tiered pricing: ₹30,000 for first 2kW and ₹18,000 for the 3rd kW."
-    }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Tailwind CSS & Fonts -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        solarAmber: '#f59e0b',
-                        offWhite: '#f9f9f9',
-                        darkText: '#1a1a1a',
-                    },
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+<!-- PRIMARY SEO -->
+<title>PM Surya Ghar Subsidy Calculator 2026 | Solar Subsidy, ROI & Savings India</title>
+<meta name="description" content="Free PM Surya Ghar Subsidy Calculator 2026 for India. Calculate rooftop solar subsidy up to ₹78,000, estimated installation cost, annual electricity savings, ROI and payback period instantly.">
+<meta name="keywords" content="pm surya ghar subsidy calculator, solar subsidy calculator india, rooftop solar subsidy 2026, pm surya ghar yojana, solar roi calculator india">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="SuryaGharHelp">
+<link rel="canonical" href="https://suryagharhelp.github.io/">
 
-    <style>
-        /* Custom UI Micro-interactions */
-        body { background-color: #f9f9f9; scroll-behavior: smooth; }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        .slider-custom::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 28px;
-            height: 28px;
-            background: #f59e0b;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 4px solid white;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .roi-king-gradient {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-        }
-    </style>
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="PM Surya Ghar Subsidy Calculator 2026">
+<meta property="og:description" content="Check subsidy up to ₹78,000, annual savings and payback period for rooftop solar in India.">
+<meta property="og:url" content="https://suryagharhelp.github.io/">
+<meta property="og:site_name" content="Surya Ghar Help">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PM Surya Ghar Subsidy Calculator 2026">
+<meta name="twitter:description" content="Free calculator for PM Surya Ghar subsidy, savings and ROI in India.">
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebApplication",
+"name":"PM Surya Ghar Subsidy Calculator",
+"url":"https://suryagharhelp.github.io/",
+"applicationCategory":"FinanceApplication",
+"operatingSystem":"All",
+"description":"Free online calculator to estimate PM Surya Ghar rooftop solar subsidy, annual savings and payback period in India.",
+"offers":{
+"@type":"Offer",
+"price":"0",
+"priceCurrency":"INR"
+}
+}
+</script>
+
+<!-- Tailwind CSS & Fonts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+solarAmber: '#f59e0b',
+offWhite: '#f9f9f9',
+darkText: '#1a1a1a',
+},
+fontFamily: {
+sans: ['Plus Jakarta Sans', 'sans-serif'],
+}
+}
+}
+}
+</script>
+
+<style>
+body { background-color: #f9f9f9; scroll-behavior: smooth; }
+.glass-card {
+background: rgba(255,255,255,0.8);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.3);
+}
+.slider-custom::-webkit-slider-thumb {
+-webkit-appearance:none;
+width:28px;
+height:28px;
+background:#f59e0b;
+border-radius:50%;
+cursor:pointer;
+border:4px solid white;
+box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);
+}
+.roi-king-gradient {
+background: linear-gradient(135deg,#f59e0b 0%,#d97706 100%);
+}
+</style>
 </head>
+
 <body class="text-darkText antialiased">
 
-    <!-- Legal Compliance Header -->
-    <div class="w-full bg-zinc-900 text-zinc-400 text-[10px] md:text-xs py-2 text-center font-medium tracking-widest px-4 uppercase">
-        Private Awareness Initiative • Not Affiliated with any Government Ministry
-    </div>
+<div class="w-full bg-zinc-900 text-zinc-400 text-[10px] md:text-xs py-2 text-center font-medium tracking-widest px-4 uppercase">
+Independent Awareness Tool • Not Affiliated With Any Government Ministry
+</div>
 
-    <!-- Navigation -->
-    <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
-        <div class="flex items-center gap-2 group">
-            <div class="w-10 h-10 bg-solarAmber rounded-xl flex items-center justify-center transition-transform group-hover:rotate-12">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-            </div>
-            <span class="font-extrabold text-xl tracking-tight">Surya Ghar <span class="text-solarAmber">Subsidy</span></span>
-        </div>
-        <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-zinc-500">
-            <a href="#calculator" class="hover:text-solarAmber transition-colors">Calculator</a>
-            <a href="#faq" class="hover:text-solarAmber transition-colors">2026 Guidelines</a>
-        </div>
-    </nav>
+<nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+<div class="flex items-center gap-2 group">
+<div class="w-10 h-10 bg-solarAmber rounded-xl flex items-center justify-center">
+☀️
+</div>
+<span class="font-extrabold text-xl tracking-tight">Surya Ghar <span class="text-solarAmber">Help</span></span>
+</div>
 
-    <main class="max-w-6xl mx-auto px-6 pt-12 pb-24">
-        
-        <!-- Hero Section -->
-        <header class="max-w-3xl mb-16">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
-                Your <span class="text-solarAmber">₹78,000</span> Solar Advantage.
-            </h1>
-            <p class="text-xl text-zinc-500 font-medium leading-relaxed">
-                The April 2026 update to the Surya Ghar Muft Bijli Yojana allows residential consumers to maximize returns. Calculate your system size and ROI in seconds.
-            </p>
-        </header>
+<div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-zinc-500">
+<a href="#calculator" class="hover:text-solarAmber">Calculator</a>
+<a href="#faq" class="hover:text-solarAmber">Guide</a>
+</div>
+</nav>
 
-        <div id="calculator" class="grid lg:grid-cols-12 gap-8 items-start">
-            
-            <!-- Input Card -->
-            <section class="lg:col-span-5 glass-card p-8 rounded-[2rem] shadow-xl shadow-zinc-200/50">
-                <div class="mb-12">
-                    <div class="flex justify-between items-end mb-6">
-                        <label class="font-bold text-xs uppercase tracking-[0.2em] text-zinc-400">Monthly Electricity Units</label>
-                        <div class="text-right">
-                            <span id="unit-display" class="text-5xl font-extrabold text-darkText">360</span>
-                            <span class="block text-xs font-bold text-solarAmber uppercase">kWh / Month</span>
-                        </div>
-                    </div>
-                    <input type="range" id="unit-slider" min="50" max="1000" value="360" 
-                        class="w-full h-1.5 bg-zinc-200 rounded-lg appearance-none cursor-pointer slider-custom">
-                </div>
+<main class="max-w-6xl mx-auto px-6 pt-12 pb-24">
 
-                <div class="space-y-4">
-                    <div class="p-5 bg-offWhite rounded-2xl border border-zinc-100">
-                        <label class="block text-[10px] font-black uppercase text-zinc-400 mb-3 tracking-widest">State Specific Bonus</label>
-                        <select id="state-bonus" class="w-full bg-transparent font-bold text-darkText focus:outline-none cursor-pointer">
-                            <option value="0">Standard MNRE Subsidy</option>
-                            <option value="15000">Uttar Pradesh (Special Bonus)</option>
-                            <option value="8000">Rajasthan State Incentive</option>
-                            <option value="10000">Gujarat Surya Incentive</option>
-                        </select>
-                    </div>
+<header class="max-w-3xl mb-16">
+<h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
+PM Surya Ghar <span class="text-solarAmber">Subsidy Calculator</span> 2026
+</h1>
 
-                    <!-- ROI King Badge -->
-                    <div id="king-badge" class="hidden animate-in fade-in slide-in-from-bottom-4 duration-700">
-                        <div class="roi-king-gradient p-1 rounded-2xl">
-                            <div class="bg-white/90 p-4 rounded-[calc(1rem-1px)] flex items-center gap-4">
-                                <span class="text-3xl">🏆</span>
-                                <div>
-                                    <p class="font-black text-darkText text-sm uppercase leading-tight">ROI King Status</p>
-                                    <p class="text-xs font-bold text-zinc-500">You are utilizing the maximum ₹78,000 cap!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<p class="text-xl text-zinc-500 font-medium leading-relaxed">
+Calculate subsidy up to ₹78,000, estimated installation cost, annual electricity savings and rooftop solar payback period in India.
+</p>
+</header>
 
-            <!-- Results Grid -->
-            <section class="lg:col-span-7 grid grid-cols-2 gap-4">
-                
-                <!-- Main Result -->
-                <div class="col-span-2 bg-zinc-900 text-white p-10 rounded-[2.5rem] relative overflow-hidden">
-                    <div class="relative z-10">
-                        <p class="text-[10px] font-black uppercase tracking-[0.3em] opacity-50 mb-4">Recommended Capacity</p>
-                        <div class="flex justify-between items-baseline">
-                            <h2 class="text-7xl font-extrabold" id="res-kw">3<span class="text-3xl ml-2 opacity-50">kW</span></h2>
-                            <div class="text-right">
-                                <p class="text-xs font-bold opacity-50 uppercase mb-1">Annual Savings</p>
-                                <p class="text-3xl font-extrabold text-solarAmber" id="res-savings">₹34,560</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Decorative Element -->
-                    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-solarAmber opacity-10 rounded-full blur-3xl"></div>
-                </div>
+<div id="calculator" class="grid lg:grid-cols-12 gap-8 items-start">
 
-                <div class="glass-card p-8 rounded-[2rem]">
-                    <p class="text-[10px] font-black uppercase text-zinc-400 mb-2 tracking-widest">Subsidy</p>
-                    <p class="text-3xl font-extrabold text-green-600" id="res-subsidy">₹78,000</p>
-                </div>
+<section class="lg:col-span-5 glass-card p-8 rounded-[2rem] shadow-xl shadow-zinc-200/50">
 
-                <div class="glass-card p-8 rounded-[2rem]">
-                    <p class="text-[10px] font-black uppercase text-zinc-400 mb-2 tracking-widest">Payback</p>
-                    <p class="text-3xl font-extrabold" id="res-payback">3.2 <span class="text-sm">Yrs</span></p>
-                </div>
+<div class="mb-12">
+<div class="flex justify-between items-end mb-6">
+<label class="font-bold text-xs uppercase tracking-[0.2em] text-zinc-400">Monthly Electricity Units</label>
 
-                <div class="col-span-2 border-2 border-dashed border-zinc-200 p-8 rounded-[2rem] flex justify-between items-center">
-                    <div>
-                        <p class="text-xs font-bold text-zinc-400 uppercase tracking-widest">Your Net Investment</p>
-                        <p class="text-sm font-medium text-zinc-500 italic mt-1">Includes estimated installation & net-metering</p>
-                    </div>
-                    <p class="text-4xl font-extrabold" id="res-net">₹1,17,000</p>
-                </div>
-            </section>
-        </div>
+<div class="text-right">
+<span id="unit-display" class="text-5xl font-extrabold text-darkText">360</span>
+<span class="block text-xs font-bold text-solarAmber uppercase">kWh / Month</span>
+</div>
+</div>
 
-        <!-- GEO / Atomic Answer Block -->
-        <section id="faq" class="mt-32 pt-20 border-t border-zinc-200">
-            <h3 class="text-3xl font-extrabold mb-12 tracking-tight">2026 Policy Insights</h3>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="group">
-                    <h4 class="text-lg font-extrabold mb-4 group-hover:text-solarAmber transition-colors uppercase tracking-tight">What is the subsidy for a 3kW solar system?</h4>
-                    <p class="text-zinc-500 leading-relaxed font-medium">
-                        As per the **Surya Ghar Solar Subsidy 2026** updates, a 3kW system receives a total of <strong>₹78,000</strong>. This is broken down as ₹30,000 per kW for the first 2kW (₹60,000) and ₹18,000 for the 3rd kW.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-extrabold mb-4 uppercase tracking-tight">Why is 3kW called the "ROI King"?</h4>
-                    <p class="text-zinc-500 leading-relaxed font-medium">
-                        The subsidy structure caps at 3kW. While you can install 5kW or 10kW, the government subsidy does not increase beyond ₹78,000, making 3kW the most financially optimized installation for residential users.
-                    </p>
-                </div>
-            </div>
-        </section>
+<input type="range" id="unit-slider" min="50" max="1000" value="360"
+class="w-full h-1.5 bg-zinc-200 rounded-lg appearance-none cursor-pointer slider-custom">
+</div>
 
-        <!-- Legal Safe Harbor Footer -->
-        <footer class="mt-32">
-            <div class="bg-zinc-100 p-10 rounded-[2.5rem] border border-zinc-200">
-                <h5 class="text-xs font-black uppercase tracking-[0.2em] mb-6">Legal Disclaimer & Compliance</h5>
-                <div class="grid md:grid-cols-2 gap-8 text-[11px] font-bold text-zinc-500 leading-loose uppercase tracking-widest">
-                    <p>
-                        This tool "Surya Ghar Solar Subsidy" is an independent educational calculator. We are not government officials. Estimates are based on 2026 market benchmarks: 1kW (₹70k), 2kW (₹140k), 3kW (₹195k).
-                    </p>
-                    <p>
-                        Official applications must be filed at <a href="https://pmsuryaghar.gov.in" class="text-solarAmber underline">pmsuryaghar.gov.in</a>. We do not collect Aadhaar data, OTPs, or process payments. Always verify vendor ratings on the national portal.
-                    </p>
-                </div>
-            </div>
-            <p class="text-center mt-12 text-[10px] font-black text-zinc-300 uppercase tracking-[0.5em]">
-                &copy; 2026 Surya Ghar Subsidy Awareness Project
-            </p>
-        </footer>
-    </main>
+<div class="space-y-4">
+<div class="p-5 bg-offWhite rounded-2xl border border-zinc-100">
+<label class="block text-[10px] font-black uppercase text-zinc-400 mb-3 tracking-widest">State Bonus</label>
 
-    <script>
-        const slider = document.getElementById('unit-slider');
-        const unitDisplay = document.getElementById('unit-display');
-        const stateBonusSelect = document.getElementById('state-bonus');
-        
-        // Output Elements
-        const resKw = document.getElementById('res-kw');
-        const resSubsidy = document.getElementById('res-subsidy');
-        const resNet = document.getElementById('res-net');
-        const resPayback = document.getElementById('res-payback');
-        const resSavings = document.getElementById('res-savings');
-        const kingBadge = document.getElementById('king-badge');
+<select id="state-bonus" class="w-full bg-transparent font-bold text-darkText focus:outline-none cursor-pointer">
+<option value="0">Standard MNRE Subsidy</option>
+<option value="15000">Uttar Pradesh</option>
+<option value="8000">Rajasthan</option>
+<option value="10000">Gujarat</option>
+</select>
+</div>
 
-        function updateCalculator() {
-            const units = parseInt(slider.value);
-            unitDisplay.innerText = units;
+<div id="king-badge" class="hidden">
+<div class="roi-king-gradient p-1 rounded-2xl">
+<div class="bg-white/90 p-4 rounded-[calc(1rem-1px)] flex items-center gap-4">
+<span class="text-3xl">🏆</span>
+<div>
+<p class="font-black text-darkText text-sm uppercase">ROI King Status</p>
+<p class="text-xs font-bold text-zinc-500">Maximum ₹78,000 benefit unlocked.</p>
+</div>
+</div>
+</div>
+</div>
 
-            // 1. Capacity Logic (1kW per 120 units)
-            let kw = Math.ceil(units / 120);
-            if (kw < 1) kw = 1;
+</div>
+</section>
 
-            // 2. 2026 Pricing Estimates
-            let totalCost = 0;
-            if (kw === 1) totalCost = 70000;
-            else if (kw === 2) totalCost = 140000;
-            else if (kw === 3) totalCost = 195000;
-            else totalCost = 195000 + ((kw - 3) * 55000); // Standard addition beyond 3kW
+<section class="lg:col-span-7 grid grid-cols-2 gap-4">
 
-            // 3. 2026 Subsidy Math (MNRE Tiered)
-            let subsidy = 0;
-            if (kw >= 1) subsidy += Math.min(kw, 2) * 30000; // ₹30k/kW for first 2
-            if (kw >= 3) subsidy += 18000; // ₹18k for the 3rd kW
-            if (subsidy > 78000) subsidy = 78000; // Cap at ₹78k
+<div class="col-span-2 bg-zinc-900 text-white p-10 rounded-[2.5rem] relative overflow-hidden">
+<p class="text-[10px] font-black uppercase tracking-[0.3em] opacity-50 mb-4">Recommended Capacity</p>
 
-            // 4. State Bonus Logic
-            const stateBonus = parseInt(stateBonusSelect.value);
-            const totalBenefit = subsidy + stateBonus;
-            
-            // 5. ROI & Payback Math
-            const netCost = totalCost - totalBenefit;
-            const annualSavings = units * 8 * 12; // Default ₹8 per unit avg
-            const payback = netCost / annualSavings;
+<div class="flex justify-between items-baseline">
+<h2 class="text-7xl font-extrabold" id="res-kw">3<span class="text-3xl ml-2 opacity-50">kW</span></h2>
 
-            // UI Updates
-            resKw.innerHTML = `${kw}<span class="text-3xl ml-2 opacity-50">kW</span>`;
-            resSubsidy.innerText = `₹${totalBenefit.toLocaleString('en-IN')}`;
-            resNet.innerText = `₹${netCost.toLocaleString('en-IN')}`;
-            resSavings.innerText = `₹${annualSavings.toLocaleString('en-IN')}`;
-            resPayback.innerHTML = `${payback.toFixed(1)} <span class="text-sm">Yrs</span>`;
+<div class="text-right">
+<p class="text-xs font-bold opacity-50 uppercase mb-1">Annual Savings</p>
+<p class="text-3xl font-extrabold text-solarAmber" id="res-savings">₹34,560</p>
+</div>
+</div>
+</div>
 
-            // ROI King Logic
-            if (units >= 360) {
-                kingBadge.classList.remove('hidden');
-            } else {
-                kingBadge.classList.add('hidden');
-            }
-        }
+<div class="glass-card p-8 rounded-[2rem]">
+<p class="text-[10px] font-black uppercase text-zinc-400 mb-2 tracking-widest">Subsidy</p>
+<p class="text-3xl font-extrabold text-green-600" id="res-subsidy">₹78,000</p>
+</div>
 
-        slider.addEventListener('input', updateCalculator);
-        stateBonusSelect.addEventListener('change', updateCalculator);
+<div class="glass-card p-8 rounded-[2rem]">
+<p class="text-[10px] font-black uppercase text-zinc-400 mb-2 tracking-widest">Payback</p>
+<p class="text-3xl font-extrabold" id="res-payback">3.2 Yrs</p>
+</div>
 
-        // Initial Run
-        updateCalculator();
-    </script>
+<div class="col-span-2 border-2 border-dashed border-zinc-200 p-8 rounded-[2rem] flex justify-between items-center">
+<div>
+<p class="text-xs font-bold text-zinc-400 uppercase tracking-widest">Net Investment</p>
+</div>
+<p class="text-4xl font-extrabold" id="res-net">₹1,17,000</p>
+</div>
+
+</section>
+</div>
+
+<!-- SEO CONTENT -->
+<section id="faq" class="mt-32 pt-20 border-t border-zinc-200">
+<h2 class="text-3xl font-extrabold mb-12 tracking-tight">PM Surya Ghar Yojana 2026 Guide</h2>
+
+<div class="grid md:grid-cols-2 gap-12">
+
+<div>
+<h3 class="text-lg font-extrabold mb-4">What is PM Surya Ghar Scheme?</h3>
+<p class="text-zinc-500 leading-relaxed">
+PM Surya Ghar Muft Bijli Yojana is an Indian rooftop solar scheme that helps residential households install solar systems with government subsidy support.
+</p>
+</div>
+
+<div>
+<h3 class="text-lg font-extrabold mb-4">3kW Subsidy Amount</h3>
+<p class="text-zinc-500 leading-relaxed">
+A 3kW rooftop solar system can receive subsidy up to ₹78,000 based on current benchmark structure.
+</p>
+</div>
+
+<div>
+<h3 class="text-lg font-extrabold mb-4">Why Use This Calculator?</h3>
+<p class="text-zinc-500 leading-relaxed">
+This calculator estimates recommended capacity, subsidy amount, annual bill savings and payback period instantly.
+</p>
+</div>
+
+<div>
+<h3 class="text-lg font-extrabold mb-4">Official Portal</h3>
+<p class="text-zinc-500 leading-relaxed">
+Apply only through the official portal:
+<a href="https://pmsuryaghar.gov.in" class="text-solarAmber underline">pmsuryaghar.gov.in</a>
+</p>
+</div>
+
+</div>
+</section>
+
+<footer class="mt-32">
+<div class="bg-zinc-100 p-10 rounded-[2.5rem] border border-zinc-200">
+<p class="text-sm text-zinc-500 leading-relaxed">
+This is an independent awareness calculator. We do not collect Aadhaar, OTP, payments or government applications.
+</p>
+</div>
+
+<p class="text-center mt-12 text-[10px] font-black text-zinc-300 uppercase tracking-[0.5em]">
+© 2026 Surya Ghar Help
+</p>
+</footer>
+
+</main>
+
+<script>
+const slider = document.getElementById('unit-slider');
+const unitDisplay = document.getElementById('unit-display');
+const stateBonusSelect = document.getElementById('state-bonus');
+
+const resKw = document.getElementById('res-kw');
+const resSubsidy = document.getElementById('res-subsidy');
+const resNet = document.getElementById('res-net');
+const resPayback = document.getElementById('res-payback');
+const resSavings = document.getElementById('res-savings');
+const kingBadge = document.getElementById('king-badge');
+
+function updateCalculator() {
+const units = parseInt(slider.value);
+unitDisplay.innerText = units;
+
+let kw = Math.ceil(units / 120);
+if (kw < 1) kw = 1;
+
+let totalCost = 0;
+if (kw === 1) totalCost = 70000;
+else if (kw === 2) totalCost = 140000;
+else if (kw === 3) totalCost = 195000;
+else totalCost = 195000 + ((kw - 3) * 55000);
+
+let subsidy = 0;
+if (kw >= 1) subsidy += Math.min(kw,2) * 30000;
+if (kw >= 3) subsidy += 18000;
+if (subsidy > 78000) subsidy = 78000;
+
+const stateBonus = parseInt(stateBonusSelect.value);
+const totalBenefit = subsidy + stateBonus;
+
+const netCost = totalCost - totalBenefit;
+const annualSavings = units * 8 * 12;
+const payback = netCost / annualSavings;
+
+resKw.innerHTML = `${kw}<span class="text-3xl ml-2 opacity-50">kW</span>`;
+resSubsidy.innerText = `₹${totalBenefit.toLocaleString('en-IN')}`;
+resNet.innerText = `₹${netCost.toLocaleString('en-IN')}`;
+resSavings.innerText = `₹${annualSavings.toLocaleString('en-IN')}`;
+resPayback.innerText = `${payback.toFixed(1)} Yrs`;
+
+if (units >= 360) kingBadge.classList.remove('hidden');
+else kingBadge.classList.add('hidden');
+}
+
+slider.addEventListener('input', updateCalculator);
+stateBonusSelect.addEventListener('change', updateCalculator);
+updateCalculator();
+</script>
+
 </body>
 </html>
