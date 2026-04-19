@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://suryagharhelp.github.io/</loc>
-</url>
-
-<url>
-<loc>https://suryagharhelp.github.io/apply-online.html</loc>
-</url>
-
-<url>
-<loc>https://suryagharhelp.github.io/eligibility.html</loc>
-</url>
-
-<url>
-<loc>https://suryagharhelp.github.io/documents.html</loc>
-</url>
-
-<url>
-<loc>https://suryagharhelp.github.io/solar-savings.html</loc>
-</url>
-
-<url>
-<loc>https://suryagharhelp.github.io/assam-guide.html</loc>
-</url>
-
+  <url><loc>https://suryagharhelp.github.io/index.html</loc><priority>1.0</priority></url>
+  <url><loc>https://suryagharhelp.github.io/documents.html</loc><priority>0.8</priority></url>
+  <url><loc>https://suryagharhelp.github.io/apply-online.html</loc><priority>0.8</priority></url>
+  <url><loc>https://suryagharhelp.github.io/eligibility.html</loc><priority>0.7</priority></url>
+  <url><loc>https://suryagharhelp.github.io/solar-savings.html</loc><priority>0.7</priority></url>
+  <url><loc>https://suryagharhelp.github.io/assam-guide.html</loc><priority>0.6</priority></url>
 </urlset>
