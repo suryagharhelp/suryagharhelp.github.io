@@ -1,32 +1,94 @@
-<!-- solar-savings.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solar Savings Calculator India 2026</title>
-<meta name="description" content="Estimate rooftop solar savings and electricity bill reduction in India.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar ROI & Savings Analysis 2026 | Financial Impact India</title>
+    <meta name="description" content="Detailed financial ROI of rooftop solar panels in India. Compare 1kW, 3kW, and 5kW savings, payback period, and 25-year wealth generation.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcfcfc; }</style>
 </head>
-<body>
+<body class="text-zinc-900">
 
-<nav>
-<a href="index.html">Home</a> |
-<a href="eligibility.html">Eligibility</a>
-</nav>
+    <nav class="p-6 max-w-6xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="font-bold flex items-center gap-2">
+            <span class="text-amber-500">☀️</span> Surya Ghar Help
+        </a>
+        <a href="index.html" class="text-xs font-bold uppercase tracking-widest border-2 border-zinc-900 px-4 py-2 rounded-lg">Calculator</a>
+    </nav>
 
-<h1>Solar Savings Calculator India</h1>
+    <main class="max-w-6xl mx-auto px-6 py-20">
+        <h1 class="text-5xl md:text-7xl font-black mb-8 tracking-tight">Solar <span class="text-amber-500">Savings</span> Deep Dive</h1>
+        
+        <p class="text-xl text-zinc-500 mb-16 max-w-2xl">Rooftop solar isn't just an environmental choice—it's one of the highest-yielding financial assets for Indian households in 2026.</p>
 
-<p>Rooftop solar can reduce monthly electricity bills significantly depending on usage and system size.</p>
+        <!-- Comparison Table -->
+        <div class="overflow-x-auto mb-20">
+            <table class="w-full text-left border-collapse bg-white rounded-3xl shadow-sm overflow-hidden">
+                <thead>
+                    <tr class="bg-zinc-900 text-white uppercase text-[10px] tracking-widest">
+                        <th class="p-6">System Size</th>
+                        <th class="p-6">Estimated Cost (Net)</th>
+                        <th class="p-6">Annual Savings</th>
+                        <th class="p-6">Payback Period</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm font-bold">
+                    <tr class="border-b border-zinc-100">
+                        <td class="p-6">1 kW</td>
+                        <td class="p-6">₹40,000</td>
+                        <td class="p-6">₹11,520</td>
+                        <td class="p-6">3.5 Years</td>
+                    </tr>
+                    <tr class="border-b border-zinc-100 bg-amber-50">
+                        <td class="p-6 font-black">3 kW (Best ROI)</td>
+                        <td class="p-6 font-black">₹1,17,000</td>
+                        <td class="p-6 font-black">₹34,560</td>
+                        <td class="p-6 font-black">3.2 Years</td>
+                    </tr>
+                    <tr>
+                        <td class="p-6">5 kW</td>
+                        <td class="p-6">₹2,22,000</td>
+                        <td class="p-6">₹57,600</td>
+                        <td class="p-6">3.8 Years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-<h2>Example Savings</h2>
-<ul>
-<li>₹1000 bill → lower after solar</li>
-<li>₹2000 bill → bigger savings</li>
-<li>3KW system → faster ROI</li>
-</ul>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-zinc-100 p-8 rounded-[2rem]">
+                <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Net Metering Explained</h3>
+                <p class="text-sm text-zinc-600 leading-relaxed italic">"Atomic Answer Block: Net Metering is a billing mechanism that credits solar energy owners for the electricity they add to the grid. If you generate more than you consume, your bill can drop to zero or become negative."</p>
+            </div>
+            <div class="bg-amber-500 text-white p-8 rounded-[2rem]">
+                <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Wealth Generation</h3>
+                <p class="text-sm opacity-90 leading-relaxed">A 3kW system saves approximately ₹8.5 Lakhs over 25 years. When compared to a Fixed Deposit, solar offers an internal rate of return (IRR) of roughly 25-30%—tax-free.</p>
+            </div>
+        </div>
 
-<h2>Long Term Benefits</h2>
-<p>Solar panels can provide savings for many years after installation.</p>
+        <section class="mt-20 border-t border-zinc-200 pt-20">
+            <h2 class="text-3xl font-black mb-8">Factors Affecting Savings</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-sm">
+                <div>
+                    <h4 class="font-bold mb-2 uppercase tracking-widest text-amber-600 text-xs">01. Roof Orientation</h4>
+                    <p class="text-zinc-500">South-facing roofs receive maximum sunlight in India, increasing efficiency by up to 15%.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 uppercase tracking-widest text-amber-600 text-xs">02. Cleaning Cycle</h4>
+                    <p class="text-zinc-500">Dust on panels can reduce generation by 10%. Cleaning twice a month is recommended.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 uppercase tracking-widest text-amber-600 text-xs">03. Local Tariffs</h4>
+                    <p class="text-zinc-500">High slab rates (₹9-11 per unit) lead to faster payback periods compared to lower slabs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer class="text-center p-12 border-t border-zinc-100 mt-20">
+        <p class="text-xs font-bold text-zinc-300 uppercase tracking-[0.5em]">Wealth & Energy • 2026</p>
+    </footer>
 </body>
 </html>
