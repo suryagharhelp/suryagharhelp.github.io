@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://suryagharhelp.github.io/sitemap.xml
