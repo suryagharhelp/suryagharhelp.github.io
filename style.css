@@ -1,26 +1,48 @@
+/* ===============================
+   Surya Ghar Help - Global Theme
+   Use on all pages
+================================= */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Inter,Arial,sans-serif;
+font-family:Arial, sans-serif;
 background:#f8fafc;
 color:#111827;
 line-height:1.6;
+font-size:16px;
 }
 
+/* Layout */
 .container{
-width:92%;
-max-width:1100px;
+width:90%;
+max-width:1180px;
 margin:auto;
 }
 
+/* Top Notice */
+.notice{
+background:#111827;
+color:#ffffff;
+text-align:center;
+padding:8px 12px;
+font-size:13px;
+letter-spacing:.3px;
+}
+
+/* Header */
 header{
-background:white;
-padding:16px 0;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
+background:#ffffff;
+padding:18px 0;
+box-shadow:0 2px 12px rgba(0,0,0,.06);
 position:sticky;
 top:0;
 z-index:999;
@@ -30,106 +52,390 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-gap:15px;
 flex-wrap:wrap;
+gap:12px;
 }
 
 .logo{
-font-size:24px;
+font-size:28px;
 font-weight:800;
+color:#111827;
+line-height:1.1;
+}
+
+.logo span{
 color:#f59e0b;
+}
+
+/* Navigation */
+.menu{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
 }
 
 .menu a{
 text-decoration:none;
-margin:0 10px;
-color:#111827;
-font-weight:600;
+padding:8px 10px;
 font-size:15px;
+font-weight:700;
+color:#374151;
+border-radius:8px;
+transition:.2s ease;
 }
 
+.menu a:hover,
+.menu a.active{
+background:#fff7ed;
+color:#f59e0b;
+}
+
+/* Hero */
 .hero{
-padding:60px 0;
-text-align:center;
+padding:70px 0;
+background:#ffffff;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
 }
 
 .hero h1{
-font-size:42px;
-font-weight:800;
-margin-bottom:12px;
+font-size:56px;
+line-height:1.08;
+font-weight:900;
+margin-bottom:18px;
+color:#111827;
+}
+
+.hero h1 span{
+color:#f59e0b;
 }
 
 .hero p{
-font-size:18px;
+font-size:20px;
 color:#6b7280;
-max-width:700px;
-margin:auto;
+max-width:760px;
+margin-bottom:20px;
 }
 
-.card{
-background:white;
-padding:25px;
-border-radius:18px;
-box-shadow:0 8px 25px rgba(0,0,0,.06);
-margin-top:25px;
-}
-
+/* Buttons */
 .btn{
 display:inline-block;
+padding:14px 24px;
 background:#f59e0b;
-color:white;
-padding:13px 22px;
-border-radius:12px;
+color:#ffffff;
 text-decoration:none;
+border:none;
+border-radius:10px;
 font-weight:700;
-margin:8px;
+cursor:pointer;
+transition:.2s ease;
+margin:6px 8px 0 0;
+}
+
+.btn:hover{
+background:#d97706;
+transform:translateY(-1px);
+}
+
+.btn-dark{
+background:#111827;
+}
+
+.btn-dark:hover{
+background:#1f2937;
 }
 
 .btn-outline{
-background:white;
+background:#ffffff;
 color:#f59e0b;
 border:2px solid #f59e0b;
 }
 
+.btn-outline:hover{
+background:#fff7ed;
+}
+
+/* Cards */
+.card,
+.feature-box,
+.info-box{
+background:#ffffff;
+padding:28px;
+border-radius:18px;
+box-shadow:0 10px 24px rgba(0,0,0,.05);
+}
+
+.card h3,
+.feature-box h3,
+.info-box h3{
+font-size:22px;
+margin-bottom:12px;
+color:#111827;
+}
+
+.card p,
+.feature-box p,
+.info-box p{
+color:#555;
+}
+
+/* Grid */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:18px;
-margin-top:25px;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
 }
 
-.feature{
-background:white;
-padding:20px;
-border-radius:16px;
-box-shadow:0 6px 20px rgba(0,0,0,.05);
+.grid-2{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:24px;
 }
 
-footer{
-margin-top:60px;
-padding:30px 0;
-background:#111827;
-color:white;
+.grid-4{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+/* Sections */
+.section{
+padding:70px 0;
+}
+
+.section h2{
+font-size:40px;
+margin-bottom:18px;
 text-align:center;
+color:#111827;
+}
+
+.center{
+text-align:center;
+max-width:780px;
+margin:auto;
+color:#6b7280;
+margin-bottom:35px;
+}
+
+/* Content */
+.content{
+background:#ffffff;
+padding:70px 0;
+}
+
+.content h2{
+font-size:38px;
+margin-bottom:20px;
+}
+
+.content h3{
+font-size:26px;
+margin-top:28px;
+margin-bottom:10px;
+}
+
+.content p{
+margin-bottom:15px;
+color:#444;
+}
+
+.content ul,
+.content ol{
+padding-left:22px;
+margin-bottom:15px;
+}
+
+.content li{
+margin-bottom:8px;
+}
+
+/* Calculator */
+.calc{
+background:#ffffff;
+padding:28px;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.calc h2{
+font-size:30px;
+margin-bottom:18px;
+}
+
+label{
+display:block;
+font-weight:700;
+margin-top:14px;
+margin-bottom:8px;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:13px;
+border:1px solid #d1d5db;
+border-radius:10px;
+font-size:16px;
+outline:none;
+background:#fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+border-color:#f59e0b;
+box-shadow:0 0 0 3px rgba(245,158,11,.15);
+}
+
+.result{
+margin-top:22px;
+background:#111827;
+color:#ffffff;
+padding:22px;
+border-radius:18px;
+}
+
+.result h3{
+font-size:34px;
+margin-bottom:8px;
+}
+
+/* Tables */
+table{
+width:100%;
+border-collapse:collapse;
+margin:18px 0;
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+}
+
+th,td{
+padding:14px;
+border-bottom:1px solid #e5e7eb;
+text-align:left;
+}
+
+th{
+background:#f3f4f6;
+font-weight:700;
+}
+
+/* Alert Boxes */
+.highlight{
+background:#111827;
+color:#fff;
+padding:28px;
+border-radius:18px;
+margin-top:20px;
+}
+
+.warning{
+background:#fff7ed;
+border-left:4px solid #f59e0b;
+padding:18px;
+border-radius:10px;
+margin:18px 0;
+}
+
+/* Footer */
+footer{
+background:#111827;
+color:#ffffff;
+padding:30px 0;
+text-align:center;
+margin-top:50px;
 font-size:14px;
 }
 
-h2{
-margin-bottom:12px;
+/* Utility */
+.mt-20{margin-top:20px;}
+.mt-30{margin-top:30px;}
+.mb-20{margin-bottom:20px;}
+.text-center{text-align:center;}
+.hidden{display:none;}
+
+/* Mobile */
+@media(max-width:992px){
+
+.hero-grid,
+.grid,
+.grid-2,
+.grid-4{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.section h2{
+font-size:32px;
+}
+
+.content h2{
+font-size:32px;
+}
+
+}
+
+@media(max-width:600px){
+
+body{
+font-size:15px;
+}
+
+.container{
+width:92%;
+}
+
+.logo{
+font-size:24px;
+}
+
+.menu{
+gap:6px;
+}
+
+.menu a{
+font-size:14px;
+padding:7px 8px;
+}
+
+.hero{
+padding:50px 0;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+margin-right:0;
+}
+
+.calc,
+.card,
+.feature-box,
+.info-box{
+padding:22px;
+}
+
+.result h3{
 font-size:28px;
 }
 
-@media(max-width:768px){
-.hero h1{
-font-size:30px;
-}
-.menu{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-.menu a{
-margin:6px;
-font-size:14px;
-}
 }

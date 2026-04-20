@@ -4,17 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PM Surya Ghar Subsidy Calculator 2026 | Solar Subsidy & Savings India</title>
+<title>PM Surya Ghar Subsidy Calculator 2026 | Solar Savings & ROI India</title>
 
-<meta name="description" content="Check PM Surya Ghar subsidy amount, rooftop solar savings, ROI, payback period, required documents, eligibility and apply online guide for India.">
+<meta name="description" content="Calculate PM Surya Ghar subsidy amount, rooftop solar savings, annual bill reduction and ROI for India. Apply online, eligibility and document guide included.">
 
-<meta name="keywords" content="PM Surya Ghar subsidy calculator, solar subsidy India 2026, rooftop solar subsidy, solar savings calculator, PM Surya Ghar Yojana">
+<meta name="keywords" content="PM Surya Ghar subsidy calculator, rooftop solar subsidy India, solar savings calculator, solar ROI India">
 
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index,follow">
 
 <link rel="canonical" href="https://suryagharhelp.github.io/">
-
-<link rel="stylesheet" href="style.css">
 
 <style>
 *{
@@ -24,22 +22,31 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
-background:#f8f9fa;
-color:#222;
+font-family:Arial,sans-serif;
+background:#f8fafc;
+color:#111827;
 line-height:1.6;
 }
 
 .container{
 width:90%;
-max-width:1200px;
+max-width:1180px;
 margin:auto;
 }
 
+.notice{
+background:#111827;
+color:#fff;
+text-align:center;
+padding:8px;
+font-size:13px;
+letter-spacing:.4px;
+}
+
 header{
-background:#ffffff;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
+background:#fff;
 padding:18px 0;
+box-shadow:0 2px 12px rgba(0,0,0,.06);
 position:sticky;
 top:0;
 z-index:999;
@@ -55,7 +62,6 @@ flex-wrap:wrap;
 .logo{
 font-size:28px;
 font-weight:800;
-color:#111;
 }
 
 .logo span{
@@ -64,42 +70,33 @@ color:#f59e0b;
 
 .menu a{
 text-decoration:none;
-margin-left:20px;
-color:#333;
-font-weight:600;
+margin-left:18px;
 font-size:15px;
+font-weight:700;
+color:#333;
 }
 
 .menu a:hover{
 color:#f59e0b;
 }
 
-.notice{
-background:#111827;
-color:#fff;
-text-align:center;
-padding:8px;
-font-size:13px;
-letter-spacing:0.5px;
-}
-
 .hero{
-padding:70px 0 50px;
+padding:70px 0;
 background:#fff;
 }
 
 .hero-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:40px;
+gap:45px;
 align-items:center;
 }
 
 .hero h1{
-font-size:58px;
-font-weight:900;
+font-size:56px;
 line-height:1.05;
-margin-bottom:20px;
+font-weight:900;
+margin-bottom:18px;
 }
 
 .hero h1 span{
@@ -107,89 +104,78 @@ color:#f59e0b;
 }
 
 .hero p{
-font-size:21px;
+font-size:20px;
 color:#555;
 margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 26px;
+padding:14px 24px;
 background:#f59e0b;
 color:#fff;
 text-decoration:none;
-border-radius:8px;
+border-radius:10px;
 font-weight:700;
 margin-right:10px;
+margin-top:8px;
 }
 
 .btn-dark{
 background:#111827;
 }
 
-.calculator{
+.calc{
 background:#fff;
-padding:30px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
+padding:28px;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
-.calculator h2{
-font-size:28px;
-margin-bottom:25px;
+.calc h2{
+font-size:30px;
+margin-bottom:18px;
 }
 
 label{
 font-weight:700;
 display:block;
-margin-top:15px;
+margin-top:14px;
 margin-bottom:8px;
 }
 
 input,select{
 width:100%;
-padding:12px;
+padding:13px;
 border:1px solid #ddd;
-border-radius:8px;
+border-radius:10px;
 font-size:16px;
 }
 
-.result-box{
-margin-top:25px;
+button{
+width:100%;
+padding:15px;
+background:#f59e0b;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:16px;
+font-weight:700;
+margin-top:18px;
+cursor:pointer;
+}
+
+.result{
+margin-top:22px;
 background:#111827;
 color:#fff;
-padding:25px;
-border-radius:16px;
+padding:22px;
+border-radius:18px;
 }
 
-.result-box h3{
-font-size:30px;
-margin-bottom:10px;
-}
-
-.grid-3{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-top:25px;
-}
-
-.small-card{
-background:#fff;
-padding:20px;
-border-radius:14px;
-box-shadow:0 8px 20px rgba(0,0,0,0.05);
-}
-
-.small-card h4{
-font-size:14px;
-color:#777;
+.result h3{
+font-size:34px;
 margin-bottom:8px;
-}
-
-.small-card p{
-font-size:28px;
-font-weight:800;
 }
 
 .section{
@@ -197,30 +183,30 @@ padding:70px 0;
 }
 
 .section h2{
-font-size:42px;
-margin-bottom:20px;
+font-size:40px;
 text-align:center;
+margin-bottom:18px;
 }
 
-.section p.center{
+.center{
 text-align:center;
-max-width:800px;
+max-width:780px;
 margin:auto;
-margin-bottom:40px;
 color:#555;
+margin-bottom:35px;
 }
 
-.cards{
+.grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:25px;
+gap:24px;
 }
 
 .card{
 background:#fff;
-padding:25px;
+padding:28px;
 border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
+box-shadow:0 10px 24px rgba(0,0,0,.05);
 }
 
 .card h3{
@@ -230,7 +216,7 @@ font-size:22px;
 
 .content{
 background:#fff;
-padding:60px 0;
+padding:70px 0;
 }
 
 .content h2{
@@ -239,9 +225,9 @@ margin-bottom:20px;
 }
 
 .content h3{
-margin-top:30px;
-margin-bottom:10px;
 font-size:26px;
+margin-top:28px;
+margin-bottom:10px;
 }
 
 .content p{
@@ -250,39 +236,33 @@ color:#444;
 }
 
 .content ul{
-padding-left:20px;
+padding-left:22px;
 }
 
 footer{
 background:#111827;
 color:#fff;
 padding:30px 0;
-margin-top:60px;
 text-align:center;
+margin-top:50px;
 }
 
 @media(max-width:900px){
 
-.hero-grid,
-cards,
-.grid-3{
+.hero-grid{
 grid-template-columns:1fr;
 }
 
-.cards{
-grid-template-columns:1fr;
-}
-
-.grid-3{
+.grid{
 grid-template-columns:1fr;
 }
 
 .hero h1{
-font-size:42px;
+font-size:40px;
 }
 
 .menu{
-margin-top:15px;
+margin-top:12px;
 }
 
 .menu a{
@@ -326,39 +306,43 @@ Surya Ghar <span>Help</span>
 <div class="hero-grid">
 
 <div>
-<h1>Solar <span>Subsidy</span> & ROI Calculator 2026</h1>
+
+<h1>Solar Subsidy <span>Calculator</span> 2026</h1>
 
 <p>
-Verify your ₹78,000 benefit and annual electricity savings in under 10 seconds.
+Estimate PM Surya Ghar subsidy, rooftop solar savings and payback period in seconds.
 </p>
 
 <a href="apply-online.html" class="btn">Apply Online</a>
-<a href="documents.html" class="btn btn-dark">Required Documents</a>
+<a href="documents.html" class="btn btn-dark">Documents</a>
+
 </div>
 
-<div class="calculator">
+<div class="calc">
 
-<h2>Calculator 2026</h2>
+<h2>Check Your Benefit</h2>
 
-<label>Monthly Electricity Units</label>
+<label>Monthly Units Used</label>
 <input type="number" id="units" value="300">
 
-<label>State Bonus</label>
-<select id="state">
-<option value="0">Standard MNRE Subsidy</option>
-<option value="5000">Special State Support</option>
+<label>Select State Support</label>
+<select id="bonus">
+<option value="0">Standard Central Subsidy</option>
+<option value="5000">Extra State Support</option>
 </select>
 
-<button class="btn" style="width:100%;margin-top:20px;" onclick="calculateSubsidy()">Calculate Now</button>
+<button onclick="calculate()">Calculate Now</button>
 
-<div class="result-box">
+<div class="result">
+
 <h3 id="kw">2 kW</h3>
-<p>Recommended Capacity</p>
+<p>Recommended System Size</p>
 <br>
 
-<p>Subsidy: <strong id="subsidy">₹60,000</strong></p>
+<p>Estimated Subsidy: <strong id="subsidy">₹60,000</strong></p>
 <p>Annual Savings: <strong id="saving">₹22,000</strong></p>
-<p>Payback: <strong id="payback">3.5 Years</strong></p>
+<p>Payback Period: <strong id="payback">3.5 Years</strong></p>
+
 </div>
 
 </div>
@@ -373,24 +357,24 @@ Verify your ₹78,000 benefit and annual electricity savings in under 10 seconds
 <h2>Why Use This Tool?</h2>
 
 <p class="center">
-Estimate subsidy amount, understand rooftop solar ROI, reduce electricity bills and prepare before applying under PM Surya Ghar Yojana.
+Get a quick estimate before contacting any installer. Compare subsidy benefit, savings and return on investment.
 </p>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-<h3>₹78,000 Subsidy Check</h3>
-<p>Know the highest central subsidy benefit available under current slabs.</p>
+<h3>Subsidy Estimate</h3>
+<p>Know possible benefit under current slab system.</p>
 </div>
 
 <div class="card">
 <h3>Annual Savings</h3>
-<p>Estimate yearly electricity bill reduction after rooftop solar installation.</p>
+<p>Estimate yearly reduction in electricity bill.</p>
 </div>
 
 <div class="card">
-<h3>Payback Period</h3>
-<p>Understand how quickly your investment can recover.</p>
+<h3>Payback Time</h3>
+<p>Understand how fast your solar investment can recover.</p>
 </div>
 
 </div>
@@ -401,47 +385,41 @@ Estimate subsidy amount, understand rooftop solar ROI, reduce electricity bills 
 <section class="content">
 <div class="container">
 
-<h2>PM Surya Ghar Subsidy Calculator India 2026</h2>
+<h2>PM Surya Ghar Muft Bijli Yojana 2026</h2>
 
 <p>
-PM Surya Ghar Muft Bijli Yojana is one of India's biggest rooftop solar initiatives designed to help households lower electricity bills and generate clean power from their own rooftops. Through this scheme, eligible homes can receive financial support for installing solar systems.
+PM Surya Ghar Muft Bijli Yojana is a rooftop solar support scheme focused on helping Indian households reduce electricity expenses through solar energy adoption. Eligible residential users may receive subsidy support for installing rooftop systems.
 </p>
 
 <p>
-Our calculator helps estimate how much subsidy you may receive based on usage patterns and likely solar capacity. It also estimates annual savings and payback period.
+This calculator gives a practical estimate based on common household consumption. Final subsidy may vary depending on latest government rules, approved vendor process, system size and state-level implementation.
 </p>
 
-<h3>How Subsidy Works</h3>
-
-<p>
-Generally, smaller households may need 1kW to 2kW systems, while larger households with higher monthly electricity usage may require 3kW or more systems. Central subsidy can go up to ₹78,000 depending on latest policy slabs.
-</p>
-
-<h3>Who Should Apply?</h3>
+<h3>Who Can Benefit?</h3>
 
 <ul>
-<li>Homeowners with rooftop space</li>
-<li>Families paying regular electricity bills</li>
-<li>Users planning long-term savings</li>
-<li>People wanting clean renewable energy</li>
+<li>Families with rising monthly electricity bills</li>
+<li>Homes with usable rooftop area</li>
+<li>Long-term savers wanting lower utility cost</li>
+<li>Users interested in renewable energy</li>
 </ul>
 
-<h3>Main Benefits</h3>
+<h3>Common System Sizes</h3>
 
 <p>
-Rooftop solar can reduce dependence on rising electricity tariffs, improve long-term savings, increase property value and provide environmental benefits.
+1kW suits low users, 2kW suits small families, 3kW suits medium homes and higher systems suit heavy users.
 </p>
 
 <h3>Required Documents</h3>
 
 <p>
-Usually Aadhaar card, electricity bill, bank account details, rooftop ownership proof and address proof may be required. Visit our documents page for full checklist.
+Commonly needed items include Aadhaar card, electricity bill, bank details and ownership proof. Visit the Documents page for full checklist.
 </p>
 
 <h3>Disclaimer</h3>
 
 <p>
-This website is an independent awareness project for educational purposes. Final subsidy, eligibility and application approval depend on official government portal and DISCOM rules.
+This website is an independent information tool for awareness purposes. Please verify final subsidy, eligibility and approval through official authorities and local DISCOM channels.
 </p>
 
 </div>
@@ -449,35 +427,36 @@ This website is an independent awareness project for educational purposes. Final
 
 <footer>
 <div class="container">
-PM Surya Ghar Help © 2026 | Solar Awareness Platform
+PM Surya Ghar Help © 2026 | Independent Solar Awareness Platform
 </div>
 </footer>
 
 <script>
-function calculateSubsidy(){
+function calculate(){
 
-let units = parseInt(document.getElementById("units").value);
-let bonus = parseInt(document.getElementById("state").value);
+let units=parseInt(document.getElementById("units").value);
+let bonus=parseInt(document.getElementById("bonus").value);
 
-let kw = 1;
-if(units > 150){kw = 2;}
-if(units > 300){kw = 3;}
-if(units > 500){kw = 5;}
+let kw=1;
 
-let subsidy = 30000;
+if(units>150){kw=2;}
+if(units>300){kw=3;}
+if(units>500){kw=5;}
 
-if(kw == 2){subsidy = 60000;}
-if(kw >= 3){subsidy = 78000;}
+let subsidy=30000;
 
-subsidy += bonus;
+if(kw==2){subsidy=60000;}
+if(kw>=3){subsidy=78000;}
 
-let saving = kw * 11000;
-let payback = (kw * 70000 - subsidy) / saving;
+subsidy=subsidy+bonus;
 
-document.getElementById("kw").innerHTML = kw + " kW";
-document.getElementById("subsidy").innerHTML = "₹" + subsidy.toLocaleString();
-document.getElementById("saving").innerHTML = "₹" + saving.toLocaleString();
-document.getElementById("payback").innerHTML = payback.toFixed(1) + " Years";
+let saving=kw*11000;
+let payback=((kw*70000)-subsidy)/saving;
+
+document.getElementById("kw").innerHTML=kw+" kW";
+document.getElementById("subsidy").innerHTML="₹"+subsidy.toLocaleString();
+document.getElementById("saving").innerHTML="₹"+saving.toLocaleString();
+document.getElementById("payback").innerHTML=payback.toFixed(1)+" Years";
 
 }
 </script>
