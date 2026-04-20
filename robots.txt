@@ -1,3 +1,17 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /.idx/
+
 Sitemap: https://suryagharhelp.github.io/sitemap.xml
+
+# Allow search engines to crawl static assets
+User-agent: *
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.gif
+Allow: *.svg
