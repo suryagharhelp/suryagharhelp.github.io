@@ -1,12 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PM Surya Ghar Subsidy Calculator 2026 | Solar ROI & Savings India</title>
-    <meta name="description" content="Calculate your rooftop solar subsidy (up to ₹78,000), ROI, and electricity savings using the 2026 PM Surya Ghar guidelines. Free, instant, and mobile-friendly.">
+    <meta name="description" content="Calculate your rooftop solar subsidy (up to ₹78,000), ROI, and electricity savings using the 2026 PM Surya Ghar guidelines. Free, instant, and mobile-friendly solar calculator.">
     <meta name="keywords" content="pm surya ghar, solar subsidy, solar calculator, solar roi, solar savings, rooftop solar, solar energy india">
+    <link rel="canonical" href="https://suryagharhelp.github.io/index.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="PM Surya Ghar Subsidy Calculator 2026 | Solar ROI & Savings India">
+    <meta property="og:description" content="Calculate your rooftop solar subsidy (up to ₹78,000), ROI, and electricity savings. Free solar calculator for PM Surya Ghar scheme.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suryagharhelp.github.io/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1509014631332-9a70b912b3e8?q=80&w=1200">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PM Surya Ghar Solar Subsidy Calculator 2026">
+    <meta name="twitter:description" content="Calculate your ₹78,000 solar subsidy and annual electricity savings instantly">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1509014631332-9a70b912b3e8?q=80&w=1200">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -15,16 +28,28 @@
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "Surya Ghar Help Calculator",
+      "description": "Free PM Surya Ghar solar subsidy calculator for India",
       "url": "https://suryagharhelp.github.io/",
       "applicationCategory": "FinanceApplication",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+      "offers": { 
+        "@type": "Offer", 
+        "price": "0", 
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Surya Ghar Help",
+        "url": "https://suryagharhelp.github.io"
+      }
     }
     </script>
 
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f9f9f9; }
         .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(0,0,0,0.05); }
-        .slider-custom::-webkit-slider-thumb { -webkit-appearance: none; width: 26px; height: 26px; background: #f59e0b; border-radius: 50%; cursor: pointer; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .slider-custom::-webkit-slider-thumb { -webkit-appearance: none; width: 26px; height: 26px; background: #f59e0b; border-radius: 50%; cursor: pointer; border: 4px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .slider-custom::-moz-range-thumb { width: 26px; height: 26px; background: #f59e0b; border-radius: 50%; cursor: pointer; border: 4px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
         .nav-button { background-color: #f3f4f6; padding: 10px 20px; border-radius: 9999px; font-weight: 700; color: #4b5563; text-transform: uppercase; font-size: 12px; letter-spacing: 0.05em; }
         .nav-button:hover { background-color: #e5e7eb; color: #1f2937; }
     </style>
@@ -39,7 +64,7 @@
     <!-- Universal Navigation -->
     <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
         <a href="index.html" class="flex items-center gap-2 group">
-            <div class="w-10 h-10 bg-f59e0b rounded-xl flex items-center justify-center text-white text-xl">☀️</div>
+            <div class="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center text-white text-xl">☀️</div>
             <span class="font-extrabold text-xl tracking-tight">Surya Ghar <span class="text-amber-500">Help</span></span>
         </a>
         <div class="hidden md:flex gap-4 text-xs font-bold uppercase tracking-widest text-zinc-500 items-center">
@@ -49,7 +74,7 @@
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 pt-12 pb-24" style="background-image: url('https://images.unsplash.com/photo-1509014631332-9a70b912b3e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center top;">
+    <main class="max-w-6xl mx-auto px-6 pt-12 pb-24">
         <header class="max-w-3xl mb-16">
             <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
                 Solar <span class="text-amber-500">Subsidy</span> & ROI Calculator 2026
@@ -68,12 +93,12 @@
                             <span class="block text-xs font-bold text-amber-500">Units/Mo</span>
                         </div>
                     </div>
-                    <input type="range" id="unit-slider" min="50" max="1000" value="360" class="w-full h-1.5 bg-zinc-200 rounded-lg appearance-none slider-custom">
+                    <input type="range" id="unit-slider" min="50" max="1000" value="360" class="w-full h-1.5 bg-zinc-200 rounded-lg appearance-none slider-custom" aria-label="Monthly electricity consumption in units">
                 </div>
                 
                 <div class="p-5 bg-zinc-50 rounded-2xl mb-6">
-                    <label class="block text-[10px] font-black uppercase text-zinc-400 mb-2">State Bonus (Optional)</label>
-                    <select id="state-bonus" class="w-full bg-transparent font-bold text-sm focus:outline-none">
+                    <label class="block text-[10px] font-black uppercase text-zinc-400 mb-2" for="state-bonus">State Bonus (Optional)</label>
+                    <select id="state-bonus" class="w-full bg-transparent font-bold text-sm focus:outline-none" aria-label="Select state for additional subsidy">
                         <option value="0">Standard MNRE Subsidy</option>
                         <option value="15000">Uttar Pradesh (+₹15,000)</option>
                         <option value="10000">Gujarat (+₹10,000)</option>
@@ -122,10 +147,6 @@
                 <a href="solar-savings.html" class="nav-button">4. Savings Analysis</a>
             </div>
         </section>
-        
-        <div class="mt-16">
-            <img src="solar-panels.jpg" alt="Rooftop solar panels on a house in India" class="rounded-lg shadow-lg">
-        </div>
     </main>
 
     <footer class="bg-zinc-100 py-12 px-6 mt-20">
